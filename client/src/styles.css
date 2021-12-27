@@ -1,0 +1,87 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body
+{
+  background-color: #fcfcfc;
+}
+
+.gap{
+  margin:10px 10px;
+} 
+
+.padding{
+  padding: 0.5rem;
+}
+
+.info-style{
+  font-weight:bold;
+}
+
+.window-two-btn{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  @media only screen and (max-width: 100px){
+    display:flex;
+    flex-direction:column;
+  }
+
+}
+
+
+.block
+{
+  margin: 0 auto;
+  max-width:900px;
+  padding: 15px 30px;   
+}
+.win-two-width{
+  width: 100%;
+}
+.input-res
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 11px 11px 11px;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+.list {
+  flex: 1;
+  background-color: #0d6efd;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin: .5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  cursor: pointer;
+}
+
+div.list:hover,
+div.list:focus {
+  background-color: navy;
+}
