@@ -2,8 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
-const url =
-  "mongodb+srv://sjsumit:nodecluster@newscluster.kg7j4.mongodb.net/ResizeableAppDB?retryWrites=true&w=majority";
+const url = process.env.DATABASE || "mongodb+srv://sjsumit:nodecluster@newscluster.kg7j4.mongodb.net/ResizeableAppDB?retryWrites=true&w=majority"
 // const url = 'mongodb://127.0.0.1:27017/AlienDBex'
 mongoose.connect(url, { useNewUrlParser: true });
 const con = mongoose.connection;
